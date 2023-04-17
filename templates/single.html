@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Man0n0</title>
+    <link rel="icon" type="image/x-icon" href="/static/img/spider.ico">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}"> 
+  </head>
+  <body>
+
+    {% include 'menu.html' %}
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="static/main.js"></script>
+
+
+
+
+<!-- <div id="gal">
+
+    {% for img in imgs : %}
+
+    <div data-count ="{{ loop.index }}" class = "img_container">               
+      <img  src="static/img/{{page.path}}/{{img}}">
+    </div>
+
+    <div data-count ="{{ loop.index }}" class ="fullimg" >
+         <img  src="static/img/{{page.path}}/{{img}}">
+    </div>
+
+    {% endfor %}
+
+  </div>
+ -->
+
+
+
+<div id="w3-content" >
+
+  <div class ="vignettes">
+    
+      {% for img in imgs : %}
+
+      <div class="vignette">
+
+      <img src="static/img/{{page.path}}/{{img}}" onclick="currentDiv({{ loop.index }})">
+      
+       </div>
+
+      {% endfor %}
+
+  </div>
+
+    {% for img in imgs : %}
+
+      <img class="mySlides" img  src="static/img/{{page.path}}/{{img}}">
+
+    {% endfor %}
+
+</div>
+
+
+
+
+    <div id="content-wrapper">
+        <h1>{{ page.title }}</h1>
+        <div id="metad">
+            <span class="cat">{{ page.cat }}</span>
+            <span class="author">{{ page.author }}</span>
+            <span class="date">{{ page.published }}</span>
+        </div>
+        <div id="content">
+            {{ page }}
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

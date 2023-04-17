@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,800;1,400&display=swap');
+
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration : none ;
+    color : #000;
+}
+
+#works {
+    display : grid ;
+    grid-template-columns: 1fr 1fr  1fr 1fr 1fr;
+    //column-gap: 10px;
+    //row-gap : 10px;
+}
+
+.work{
+    position:relative;
+    overflow:hidden;
+}
+
+#works .work .wimg {
+    height : 250px;
+    overflow:hidden;
+    display:grid;
+}
+
+#works .work .wimg img {
+    width : 130%;
+    place-self: center;
+}
+
+.wdesc {
+    background:rgba(255,255,255,0.5);
+    border-radius: 10px;
+    position: absolute;
+    left : -100%;
+    padding :10px;
+    bottom:20px;
+    transition : all 0.3s linear ;
+    opacity : 0 ;
+}
+
+
+.work:hover .wdesc {
+    left:10px;
+    opacity : 1 ;
+}
+
