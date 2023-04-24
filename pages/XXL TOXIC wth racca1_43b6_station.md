@@ -2,7 +2,7 @@ title : XXL TOXIC wth racca1_43b6_station
 published: 2022-12-19
 author : collab with racca1_43b6_station
 cat: archive
-desc: ws
+type: instal
 img : chaisefoire.jpeg
 
 ...

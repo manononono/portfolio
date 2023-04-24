@@ -45,17 +45,17 @@
 
       <div class="vignette">
 
-      <img src="static/img/{{page.path}}/{{img}}" onclick="currentDiv({{ loop.index }})">
-      
+      <img src="static/img/{{page.path}}/{{img}}" onmouseenter ="currentDiv({{ loop.index }})" onmouseleave = "hideDivs({{ loop.index }})" >
+
        </div>
 
       {% endfor %}
 
-  </div>
+    </div>
 
     {% for img in imgs : %}
 
-      <img class="mySlides" img  src="static/img/{{page.path}}/{{img}}">
+      <img class="mySlides" src="static/img/{{page.path}}/{{img}}">
 
     {% endfor %}
 
@@ -67,7 +67,7 @@
     <div id="content-wrapper">
         <h1>{{ page.title }}</h1>
         <div id="metad">
-            <span class="cat">{{ page.cat }}</span>
+            <span class="type">{{ page.type }}</span>
             <span class="author">{{ page.author }}</span>
             <span class="date">{{ page.published }}</span>
         </div>

@@ -5,8 +5,6 @@ desc: ws
 
 ...
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2O3lgOpUFf4?autoplay=1" allow='autoplay' frameborder="0" allowfullscreen></iframe>
 
-<video autoplay muted width="600" height=auto>
-    <source src="https://www.youtube.com/embed/2O3lgOpUFf4?autoplay=1" type="video/mp4" />
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2O3lgOpUFf4?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+

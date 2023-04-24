@@ -1,6 +1,7 @@
-title : essai - crafted memory system
+title : crafted memory system
 published: 2022-03-06
-cat: essai
+cat: archive
+type : essai
 desc: ws
 img : craftedmemory.png
 

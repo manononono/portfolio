@@ -35,7 +35,7 @@ def imagelist(articlename):
     dir_path = os.path.dirname(os.path.realpath(articlename))+'/static/img'
     gallery_path = os.path.join(dir_path, articlename)
     if os.path.exists(gallery_path):
-        images = [f for f in os.listdir(gallery_path) if f.endswith('.jpg') or f.endswith('.jpeg') or f.endswith('.png') or f.endswith('.gif')]
+        images = [f for f in os.listdir(gallery_path) if f.endswith('.jpg') or f.endswith('.jpeg') or f.endswith('.JPG') or f.endswith('.png') or f.endswith('.gif')]
         return gallery_path ,images
     else:
         return None, None

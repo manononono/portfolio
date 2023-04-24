@@ -12,6 +12,9 @@ body{
 }
 
 
+#menu {
+ background-color: white;
+}
 
 #menu ul {
     list-style: none;
@@ -49,11 +52,20 @@ body{
   color: black;
 }
 
+
 marquee {
     background-color: #0000ff;
     color : white;
 }
 
+
+
+
+
+#articles {
+  padding-top: 99px; 
+  margin-bottom: 31px;
+}
 #articles ul {
     list-style:none;
     padding:0 0 0 0px;
@@ -61,8 +73,6 @@ marquee {
 
 #articles ul li{
     font-size:32px;
-    padding:10px 0;
-    padding-left:20px;
 }
 
 #articles ul li h2{
@@ -126,8 +136,7 @@ marquee {
 
 img{
   width:800px;
-    height:auto;
-    margin: 20px;
+  height:auto;
  }
 
 p{
@@ -180,9 +189,12 @@ filter: invert(1);
 }
 */
 
-#w3-content .mySlides{
+#w3-content img.mySlides{
+    height:500px;
+    width: auto;
     display:none;
-    width: 10%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -209,20 +221,17 @@ filter: invert(1);
     align-content: space-around;
 }
 
-.demo w3-opacity w3-hover-opacity-off{
-    width:200%;
+.vignette:hover {
+    filter : invert(1);
 }
+
 
 
 
 
 
 #bottomline {
-    position: relative; 
-}
-
-#bottomline p{
-    position: fixed; bottom: 0; width:100%; text-align: center; margin :0;
+    position: fixed; bottom: 0; width:100%; text-align: center; margin :0,0,0,0;
 }
 
 

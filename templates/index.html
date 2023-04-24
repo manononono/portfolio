@@ -7,15 +7,21 @@
     <title>Man0n0</title>
     <link rel="icon" type="image/x-icon" href="/static/img/spider.ico">
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}"> 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="three.min.js"></script>
   </head>
   <body>
    
-    {% include 'menu.html' %}
+    <div id = "menu" style ="    position: fixed;"> 
 
-    <marquee behavior="scroll" direction="left">faire que ca conmence tt de suite et que ca soit infini¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´ </marquee>
+        {% include 'menu.html' %} 
 
-        galerie photo !! (barre avec mignature et ouverture en grand sans bouger dispo ligne des vignettes)
+        <div class = "scroll" > <marquee behavior="scroll" direction="left">¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´ BIENVENUEX SUR LE PORTFOLIO DE MAN0AH CAMP0RINI `·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´ </marquee></div>
+
+    </div>
+
+    
+<!--         galerie photo !! (barre avec mignature et ouverture en grand sans bouger dispo ligne des vignettes)
 
         affichage image dans /archi & /essai
 
@@ -23,25 +29,21 @@
 
         pb info : zone de a etrangement placé
 
-        disposition de l'anim js au sein de lap age // daphnia 
+        disposition de l'anim js au sein de lap age // daphnia  -->
 
-    <!--<div class='fish'> <img src="static/img/fish.png"> </div>...-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <!--<script src="static/movingelement.js"></script>...-->
 
     <div id="articles">
-            <ul>
-
+        <ul>
         {% for article in articles %}
-            <li><a href="{{ url_for('index', _external=False) }}{{ article.path }}"><h2>{{article.title}}</h2></a><span class="categorie"><a href="/cat/{{article.cat}}">{{article.cat}}</a></span><span class="date">{{ article.published }}</span> <img src = "{{ url_for('index', _external=False) }}static/img/{{article.img}}"></li>
+            <li><a href="{{ url_for('index', _external=False) }}{{ article.path }}"><h2>{{article.title}}</h2></a><span class="type"><a href="/cat/{{article.type}}">{{article.type}}</a></span><span class="date">{{ article.published }}</span> <img src = "{{ url_for('index', _external=False) }}static/img/{{article.img}}"></li>
             
         {% endfor %}
-
-            </ul>
+        </ul>
     </div>
 
+
     <div id="bottomline">
-      <p><marquee id="bottomline" behavior="scroll" direction="right">¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´</marquee></p>
+     <marquee behavior="scroll" direction="right" >¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´¯`·¯`·.¸¸.·´¯`·.·´</marquee>
     </div>
 
     <script src="index.js"></script>

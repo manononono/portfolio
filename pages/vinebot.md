@@ -7,8 +7,6 @@ img : vinebot.jpeg
 
 ...
 
-<img src = "static/img/vinebot.jpeg">
-
 Le corps, développe un modèle de mouvement apparenté à celui d'un hyphes fongiques, d'un neurone en développement, d'une plantes rampantes. En réunissant les règnes du vivant, il transcende et questionne notre catégorisation constante de l'altérité. 
 
 S'étendant à partir d'une incrémentation apicale de matière à la manière d'une vigne, il explore un espace équivalent à plusieurs centaines de pourcent de sa longueur, sans autre intentionalité que le deploiement ou la retractation. Exploration indéfinie, il ne possède aucuns contrôle propre de la direction de sa croissance.
