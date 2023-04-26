@@ -4,10 +4,10 @@
 
                 <li><a class = "active" href="{{ url_for('index', _external=False) }}">home</a></li>
                 {% for cat in catList : %}
-                    <li><a href="../cat/{{cat}}">{{cat}}</a></li>
+                    <li><a href="{{ url_for('index', _external=False) }}/cat/{{cat}}">{{cat}}</a></li>
                 {% endfor %}
 
-                <li style="float:right; margin:0px 0px;"><a href="/info"><img src="static/img/infoico.png" ></a> </li>
+                <li style="float:right; margin:0px 0px;"><a href="/info"><img src="{{ url_for('index', _external=False) }}static/img/infoico.png" ></a> </li>
             </ul>
         </nav>
 
