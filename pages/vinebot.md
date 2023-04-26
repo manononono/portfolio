@@ -2,7 +2,6 @@ title : vinebot
 published: 2023-03-12
 author : with support of J.Dutertre
 cat: recherche en cours
-desc: ws
 img : vinebot.jpeg
 
 ...
