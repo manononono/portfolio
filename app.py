@@ -7,7 +7,7 @@ FLATPAGES_EXTENSION = '.md'
 FLATPAGES_AUTO_RELOAD = True
 
 app = Flask(__name__) 
-app.config['APPLICATION_ROOT'] = '/flaskapp'
+app.config['APPLICATION_ROOT'] = '/portfolio'
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 FLATPAGES_MARKDOWN_EXTENSIONS = ['extra']
 FLATPAGES_EXTENSION_CONFIGS = {
