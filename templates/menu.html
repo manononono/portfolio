@@ -2,7 +2,7 @@
         <nav>
             <ul>
 
-                <li><a class = "active" href="../">home</a></li>
+                <li><a class = "active" href="{{ url_for('index', _external=False) }}">home</a></li>
                 {% for cat in catList : %}
                     <li><a href="../cat/{{cat}}">{{cat}}</a></li>
                 {% endfor %}
